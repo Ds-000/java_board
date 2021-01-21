@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+tr.pointer:hover {
+	background-color: #d2dae255;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.selectedBoard {
+	background-color: #e74c3c;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+header ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+header ul li {
+    float: left;
+}
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;    
+}
+
+header ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.centerCont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container section {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.pageContainer {
+	text-align: center;
+}
+
+.circular--landscape {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #ecf0f1;
+}
+
+.circular--size50 {
+	width: 50px;
+	height: 50px;
+}
+
+.circular--size200 {
+	width: 200px;
+	height: 200px;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  /* margin-left: -50px; */
+}
+
